@@ -1,0 +1,66 @@
+
+		#"""Be sure to connect to the Selendroid server for Android tests!”””
+		#java -jar jars/selendroid-standalone-0.17.0-with-dependencies.jar
+
+		from selenium import webdriver
+		from selenium.webdriver.common.by import By
+		from selenium.webdriver.support.select import Select
+		from selenium.webdriver.support.ui import WebDriverWait
+		from selenium.webdriver.common.keys import Keys
+		from selenium.webdriver import ActionChains
+		from assertlib import assertEqual, assertAtleast, assertTrue
+		from selenium.webdriver.common.action_chains import ActionChains
+		from selenium.webdriver.common.by import By
+		from selenium.webdriver.support.ui import WebDriverWait
+		from selenium.webdriver.support import expected_conditions as EC
+		from selenium.common.exceptions import NoSuchElementException
+		from selenium.common.exceptions import NoAlertPresentException
+		from utils.exceptions import FunctionalError
+		#from utils.log import logger
+		import urllib2
+		import requests
+		import time
+import unittest
+
+"""
+ These are my options within the Assert Library:
+--------------------------------------------------------
+StringType                       assertAlmostEqual
+assertAtleast                    assertEither
+assertEqual                      assertEquals
+assertFalse                      assertIs
+assertIsInstance                 assertIsNot
+assertIsNotInstance              assertNotAlmostEqual
+assertNotEither                  assertNotEqual
+assertNotEquals                  assertPrecision
+assertSequenceEqual              assertSequenceNotEqual
+assertTrue                       assertlib
+itertools
+--------------------------------------------------------
+"""
+
+		base_url = "http://carrot.is/"
+
+		def setup_module(module):
+		    """The setup_module runs only one time.
+
+		    Note:
+		      Here we open the browser, assign log and driver as
+		      globals and hit the escape key to close the full page
+		      ad.
+		    """
+		    global driver, log
+		    driver = webdriver.Remote(desired_capabilities=webdriver.DesiredCapabilities.IPHONE)
+		    driver.get("http://carrot.is")
+
+		def teardown_module(module):
+		    driver.quit()
+
+		class TestTopNav_CarrotLogo(object):
+		    def test_carrot_logo(self):
+		        """Test correct logo present"""
+		        driver.get(base_url)
+
+
+			def teardown_class(self):
+				driver.quit()

@@ -1,0 +1,36 @@
+Running PyTests with Android Studio
+
+What you’ll need:
+iOS Driver
+Xcode / iOS Simulator (see ‘android studio’ file for download info)
+PyCharm (see ‘pycharm’ file for download info)
+
+Getting iOS Driver
+
+Download “0.6.6-SNAPSHOT”:
+http://ios-driver.github.io/ios-driver/?page=home
+
+Create a folder labeled ‘jars’ in your PyCharm project folder.
+Move the jar file to the ‘jars’ folder.
+
+Xcode/iOS Simulator provides you with the different emulators.
+
+Open PyCharm
+
+Select an iOS test from your PyCharm project.
+
+Make sure you have the driver set:
+driver  = webdriver.Remote(desired_capabilities=webdriver.DesiredCapabilities.IPHONE)
+or
+driver  = webdriver.Remote(desired_capabilities=webdriver.DesiredCapabilities.IPHONE)
+
+Terminal
+
+In the PyCharm Terminal, connect to the iOS Driver server using this command:
+java -jar jars/ios-server-standalone-0.6.6-SNAPSHOT.jar
+
+Start a new session.
+
+Run your pytest!
+
+

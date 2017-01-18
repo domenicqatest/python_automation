@@ -1,0 +1,18 @@
+Android Studio
+
+Download:
+https://developer.android.com/studio/index.html
+
+Install:
+https://developer.android.com/studio/install.html
+
+Git
+
+Download:
+https://git-scm.com/
+
+Connecting Android Studio to GitHub and Git
+https://www.youtube.com/watch?v=AJune0EMP94
+
+To open the AVD (emulator) Manager:
+Run, "/Users/$(whoami)/Library/Android/sdk/tools/android avd" in the Terminal.

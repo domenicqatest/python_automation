@@ -1,0 +1,9 @@
+Python Console
+
+Loading the web driver:
+
+‘from selenium import webdriver’
+
+‘driver = webdriver.Chrome()’
+
+‘driver.get(“URL”)’

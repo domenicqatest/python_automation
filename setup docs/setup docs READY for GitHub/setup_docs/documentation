@@ -1,0 +1,13 @@
+Viewing documentation:
+
+`open docs/index.html`
+
+Generating documentation:
+
+`pip install epydoc`
+
+`epydoc [folder]/ -o docs/`
+
+Pushing changes:
+
+`./deploy "commit message here"`

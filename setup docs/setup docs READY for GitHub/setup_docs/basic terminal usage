@@ -1,0 +1,25 @@
+Terminal Usage
+
+Running Pytests:
+
+‘py.test -s -v [repo_folder]/‘
+
+Running A Singular Python Test Within Project Folder:
+
+‘py.test [test_case].py’
+
+Running A Singular Python Class Within Test Case:
+
+‘py.test -q -s test_fixtures.py::TestClass’
+
+Running A Singular Python Test Within Test Class:
+
+‘py.test -q -s testcase.py::TestClassExample::test_example’
+
+Append to any test:
+
+-s: No capture. Don't suppress output.
+
+-v: Verbose. Gimme all the info.
+
+--tb=line: Shorten the tracebacks should an error occur.

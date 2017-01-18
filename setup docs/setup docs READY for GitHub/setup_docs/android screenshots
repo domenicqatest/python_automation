@@ -1,0 +1,32 @@
+ANDROID SCREENSHOTS
+This explains how to connect your Android device to your computer to take screenshots during testing.
+
+SETUP
+
+Connecting through the Terminal:
+
+`brew install android-platform-tools'
+
+Connect Android phone to computer.
+
+'adb devices' should now be connected.
+
+`adb logcat *:E` #shows only errors in the logs#
+
+'nano ~/.profile'
+
+Paste 'adb shell screencap -p | perl -pe 's/\x0D\x0A/\x0A/g' > ~/Desktop/screenshot_$(date+'%s').png' in there.
+
+If you need to update the path: 'open ~/.profile
+
+Taking a screenshot:
+
+'source ~/.profile
+
+'take_screenshot'
+
+Open screenshot:
+
+'open ~/Desktop/s'
+
+'open ~/Desktop/[screenshot]'

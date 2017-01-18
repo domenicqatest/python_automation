@@ -1,0 +1,67 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fnil\fcharset0 AndaleMono;\f1\fnil\fcharset0 AppleColorEmoji;}
+{\colortbl;\red255\green255\blue255;\red47\green255\blue18;\red47\green180\blue29;\red0\green255\blue0;
+\red64\green11\blue217;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \cb0 \CocoaLigature0 Domenic-Sorace:~ domenicsorace$ brew update\
+\cf3 ==>\cf4  Migrating Homebrew to v0.9.9\cf2 \
+remote: Counting objects: 933, done.\
+remote: Compressing objects: 100% (848/848), done.\
+remote: Total 933 (delta 233), reused 343 (delta 63), pack-reused 0\
+Receiving objects: 100% (933/933), 849.84 KiB | 0 bytes/s, done.\
+Resolving deltas: 100% (233/233), completed with 154 local objects.\
+From https://github.com/Homebrew/brew\
+ + 5a9e19f...84d1661 master     -> origin/master  (forced update)\
+HEAD is now at 84d1661 Merge pull request #1365 from MikeMcQuaid/audit-stable-url-beta\
+\cf5 ==>\cf2  \cf4 Homebrew has enabled anonymous aggregate user behaviour analytics\cf2 \
+Read the analytics documentation (and how to opt-out) here:\
+  https://git.io/brew-analytics\
+\cf5 ==>\cf2  \cf4 Tapping homebrew/core\cf2 \
+Cloning into '/usr/local/Library/Taps/homebrew/homebrew-core'...\
+remote: Counting objects: 3739, done.\
+remote: Compressing objects: 100% (3629/3629), done.\
+remote: Total 3739 (delta 12), reused 298 (delta 1), pack-reused 0\
+Receiving objects: 100% (3739/3739), 2.99 MiB | 3.23 MiB/s, done.\
+Resolving deltas: 100% (12/12), done.\
+Checking connectivity... done.\
+Tapped 3618 formulae (3,766 files, 9.3M)\
+\cf5 ==>\cf2  \cf4 Cleaning up /Library/Caches/Homebrew...\cf2 \
+Removing: /Library/Caches/Homebrew/chromedriver-2.19.zip... (3.4M)\
+\cf5 ==>\cf2  \cf4 Migrating /Library/Caches/Homebrew to /Users/domenicsorace/Library/Caches/Homebrew...\cf2 \
+\cf5 ==>\cf2  \cf4 Deleting /Library/Caches/Homebrew...\cf2 \
+Already up-to-date.\
+\cf5 ==>\cf2  \cf4 Migrating HOMEBREW_REPOSITORY (please wait)...\cf2 \
+\cf5 ==>\cf2  \cf4 Migrated HOMEBREW_REPOSITORY to /usr/local/Homebrew!\cf2 \
+Homebrew no longer needs to have ownership of /usr/local. If you wish you can\
+return /usr/local to its default ownership with:\
+  sudo chown root:wheel /usr/local\
+Domenic-Sorace:~ domenicsorace$ sudo chown root:wheel /usr/local\
+Domenic-Sorace:~ domenicsorace$ brew upgrade\
+\cf3 ==>\cf2  \cf4 Upgrading 1 outdated package, with result:\cf2 \
+chromedriver 2.25\
+\cf3 ==>\cf2  \cf4 Upgrading chromedriver\cf2 \
+\cf5 ==>\cf2  \cf4 Using the sandbox\cf2 \
+\cf5 ==>\cf2  \cf4 Downloading https://chromedriver.storage.googleapis.com/2.25/chromedriver_mac64.zip\cf2 \
+######################################################################## 100.0%\
+\cf5 ==>\cf2  \cf4 Caveats\cf2 \
+To have launchd start chromedriver now and restart at login:\
+  brew services start chromedriver\
+Or, if you don't want/need a background service you can just run:\
+  chromedriver\
+\cf5 ==>\cf2  \cf4 Summary\cf2 \
+
+\f1 \uc0\u55356 \u57210 
+\f0   /usr/local/Cellar/chromedriver/2.25: 4 files, 10.3M, built in 3 seconds\
+Domenic-Sorace:~ domenicsorace$ brew services start chromedriver\
+\cf5 ==>\cf2  \cf4 Tapping homebrew/services\cf2 \
+Cloning into '/usr/local/Homebrew/Library/Taps/homebrew/homebrew-services'...\
+remote: Counting objects: 10, done.\
+remote: Compressing objects: 100% (7/7), done.\
+remote: Total 10 (delta 0), reused 6 (delta 0), pack-reused 0\
+Unpacking objects: 100% (10/10), done.\
+Checking connectivity... done.\
+Tapped 0 formulae (36 files, 46K)\
+\cf5 ==>\cf2  \cf4 Successfully started `chromedriver` (label: homebrew.mxcl.chromedriver)\cf2 \
+Domenic-Sorace:~ domenicsorace$ }

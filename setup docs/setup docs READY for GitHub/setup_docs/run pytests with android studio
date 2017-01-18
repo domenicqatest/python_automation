@@ -1,0 +1,37 @@
+Running PyTests with Android Studio
+
+What you’ll need:
+Selendroid
+Android Studio (see ‘android studio’ file for download info)
+PyCharm (see ‘pycharm’ file for download info)
+
+Getting Selendroid
+
+Download “selendroid-standalone-0.17.0-with-dependencies.jar”:
+https://github.com/selendroid/selendroid/releases
+
+Create a folder labeled ‘jars’ in your PyCharm project folder.
+Move the jar file to the ‘jars’ folder.
+
+####Open Android Studio
+####Go to Tools -> Android -> AVD Manager
+####Click the ‘play’ button for the Android device you want to test.
+Android Studio provides you with the different emulators.
+
+Open PyCharm
+
+Select an Android test from your PyCharm project.
+
+Make sure you have the Android driver set:
+driver  = webdriver.Remote(desired_capabilities=webdriver.DesiredCapabilities.ANDROID)
+
+Terminal
+
+In the PyCharm Terminal, connect to the Selendroid server using this command:
+java -jar jars/selendroid-standalone-0.17.0-with-dependencies.jar
+
+Start a new session.
+
+Run your pytest!
+
+

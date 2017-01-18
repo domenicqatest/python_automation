@@ -1,0 +1,14 @@
+HOMEBREW INSTALLATION
+This will show you how to use the Terminal to install and update Homebrew.
+
+Terminal:
+
+'/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
+
+Updating Hombrew:
+
+'brew update'
+
+Upgrading Chromedriver:
+
+'brew upgrade'

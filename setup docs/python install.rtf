@@ -1,0 +1,154 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fnil\fcharset0 AndaleMono;}
+{\colortbl;\red255\green255\blue255;\red47\green255\blue18;\red159\green160\blue28;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \cb0 \CocoaLigature0 Last login: Thu Sep  8 08:44:39 on console\
+Domenic-Sorace:~ domenicsorace$ ls\
+Applications			Library\
+Desktop				Movies\
+Documents			Music\
+Downloads			Pictures\
+Dropbox (Carrot Creative)	Public\
+Google Drive\
+Domenic-Sorace:~ domenicsorace$ mkdir Repos\
+Domenic-Sorace:~ domenicsorace$ cd Repos/\
+Domenic-Sorace:Repos domenicsorace$ git clone https://github.com/VICEMedia/QA.git\
+Cloning into 'QA'...\
+remote: Invalid username or password.\
+fatal: Authentication failed for 'https://github.com/VICEMedia/QA.git/'\
+Domenic-Sorace:Repos domenicsorace$ git clone git@github.com:VICEMedia/QA.git\
+Cloning into 'QA'...\
+Warning: Permanently added the RSA host key for IP address '192.30.253.113' to the list of known hosts.\
+remote: Counting objects: 266, done.\
+remote: Compressing objects: 100% (171/171), done.\
+remote: Total 266 (delta 157), reused 194 (delta 87), pack-reused 0\
+Receiving objects: 100% (266/266), 113.92 KiB | 0 bytes/s, done.\
+Resolving deltas: 100% (157/157), done.\
+Checking connectivity... done.\
+Domenic-Sorace:Repos domenicsorace$ ls\
+QA\
+Domenic-Sorace:Repos domenicsorace$ cd QA/\
+Domenic-Sorace:QA domenicsorace$ pip install selenium assertlib pytest\
+-bash: pip: command not found\
+Domenic-Sorace:QA domenicsorace$ easy_install pip\
+error: can't create or remove files in install directory\
+\
+The following error occurred while trying to add or remove files in the\
+installation directory:\
+\
+    [Errno 13] Permission denied: '/Library/Python/2.7/site-packages/test-easy-install-4462.pth'\
+\
+The installation directory you specified (via --install-dir, --prefix, or\
+the distutils default setting) was:\
+\
+    /Library/Python/2.7/site-packages/\
+\
+Perhaps your account does not have write access to this directory?  If the\
+installation directory is a system-owned directory, you may need to sign in\
+as the administrator or "root" account.  If you do not have administrative\
+access to this machine, you may wish to choose a different installation\
+directory, preferably one that is listed in your PYTHONPATH environment\
+variable.\
+\
+For information on other options, you may wish to consult the\
+documentation at:\
+\
+  https://pythonhosted.org/setuptools/easy_install.html\
+\
+Please make the appropriate changes for your system and try again.\
+\
+Domenic-Sorace:QA domenicsorace$ sudo !!\
+sudo easy_install pip\
+Password:\
+Searching for pip\
+Reading https://pypi.python.org/simple/pip/\
+Best match: pip 8.1.2\
+Downloading https://pypi.python.org/packages/e7/a8/7556133689add8d1a54c0b14aeff0acb03c64707ce100ecd53934da1aa13/pip-8.1.2.tar.gz#md5=87083c0b9867963b29f7aba3613e8f4a\
+Processing pip-8.1.2.tar.gz\
+Writing /tmp/easy_install-5KKbZZ/pip-8.1.2/setup.cfg\
+Running pip-8.1.2/setup.py -q bdist_egg --dist-dir /tmp/easy_install-5KKbZZ/pip-8.1.2/egg-dist-tmp-KJgxzI\
+warning: no previously-included files found matching '.coveragerc'\
+warning: no previously-included files found matching '.mailmap'\
+warning: no previously-included files found matching '.travis.yml'\
+warning: no previously-included files found matching '.landscape.yml'\
+warning: no previously-included files found matching 'pip/_vendor/Makefile'\
+warning: no previously-included files found matching 'tox.ini'\
+warning: no previously-included files found matching 'dev-requirements.txt'\
+warning: no previously-included files found matching 'appveyor.yml'\
+no previously-included directories found matching '.github'\
+no previously-included directories found matching '.travis'\
+no previously-included directories found matching 'docs/_build'\
+no previously-included directories found matching 'contrib'\
+no previously-included directories found matching 'tasks'\
+no previously-included directories found matching 'tests'\
+Adding pip 8.1.2 to easy-install.pth file\
+Installing pip script to /usr/local/bin\
+Installing pip2.7 script to /usr/local/bin\
+Installing pip2 script to /usr/local/bin\
+\
+Installed /Library/Python/2.7/site-packages/pip-8.1.2-py2.7.egg\
+Processing dependencies for pip\
+Finished processing dependencies for pip\
+Domenic-Sorace:QA domenicsorace$ pip install selenium assertlib pytest\
+Collecting selenium\
+  Downloading selenium-2.53.6-py2.py3-none-any.whl (884kB)\
+    100% |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 890kB 1.2MB/s \
+Collecting assertlib\
+  Downloading assertlib-0.3.2.tar.gz\
+Collecting pytest\
+  Downloading pytest-3.0.2-py2.py3-none-any.whl (169kB)\
+    100% |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 174kB 3.5MB/s \
+Collecting py>=1.4.29 (from pytest)\
+  Downloading py-1.4.31-py2.py3-none-any.whl (81kB)\
+    100% |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 92kB 4.3MB/s \
+Installing collected packages: selenium, assertlib, py, pytest\
+\
+Domenic-Sorace:QA domenicsorace$ sudo !!\
+sudo pip install selenium assertlib pytest\
+\cf3 The directory '/Users/domenicsorace/Library/Caches/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.\cf2 \
+\cf3 The directory '/Users/domenicsorace/Library/Caches/pip' or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.\cf2 \
+Collecting selenium\
+  Downloading selenium-2.53.6-py2.py3-none-any.whl (884kB)\
+    100% |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 890kB 941kB/s \
+Collecting assertlib\
+  Downloading assertlib-0.3.2.tar.gz\
+Collecting pytest\
+  Downloading pytest-3.0.2-py2.py3-none-any.whl (169kB)\
+    100% |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 174kB 2.0MB/s \
+Collecting py>=1.4.29 (from pytest)\
+  Downloading py-1.4.31-py2.py3-none-any.whl (81kB)\
+    100% |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 92kB 4.0MB/s \
+Installing collected packages: selenium, assertlib, py, pytest\
+\
+Domenic-Sorace:QA domenicsorace$ sudo pip install selenium\
+\cf3 The directory '/Users/domenicsorace/Library/Caches/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.\cf2 \
+\cf3 The directory '/Users/domenicsorace/Library/Caches/pip' or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.\cf2 \
+Requirement already satisfied (use --upgrade to upgrade): selenium in /Library/Python/2.7/site-packages\
+Domenic-Sorace:QA domenicsorace$ sudo -H pip install selenium\
+Requirement already satisfied (use --upgrade to upgrade): selenium in /Library/Python/2.7/site-packages\
+Domenic-Sorace:QA domenicsorace$ sudo -H pip install selenium pytest assertlib\
+Requirement already satisfied (use --upgrade to upgrade): selenium in /Library/Python/2.7/site-packages\
+Collecting pytest\
+  Downloading pytest-3.0.2-py2.py3-none-any.whl (169kB)\
+    100% |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 174kB 2.8MB/s \
+Collecting assertlib\
+  Downloading assertlib-0.3.2.tar.gz\
+Collecting py>=1.4.29 (from pytest)\
+  Downloading py-1.4.31-py2.py3-none-any.whl (81kB)\
+    100% |\uc0\u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 \u9608 | 92kB 2.0MB/s \
+Installing collected packages: py, pytest, assertlib\
+  Running setup.py install for assertlib ... done\
+Successfully installed assertlib-0.3.2 py-1.4.31 pytest-3.0.2\
+Domenic-Sorace:QA domenicsorace$ ls\
+README.md	__init__.py	docs		noisey		utils\
+Domenic-Sorace:QA domenicsorace$ py.test -s -n noisey/ --tb=line\
+usage: py.test [options] [file_or_dir] [file_or_dir] [...]\
+py.test: error: unrecognized arguments: -n\
+  inifile: None\
+  rootdir: /Users/domenicsorace/Repos/QA\
+\
+\
+Domenic-Sorace:QA domenicsorace$ py.test noisey/ --tb=line\
+}
