@@ -1,0 +1,50 @@
+2017-08-15T13:53:00Z INFO org.uiautomation.ios.ApplicationStore.<init>  App archive folder:/Users/dsorace/PycharmProjects/jars/applications
+2017-08-15T13:53:00Z FINE org.uiautomation.ios.IOSServer.p  version:663b7cc0a7a48ff629b1bcb39bbd78aed1c1e560
+2017-08-15T13:53:00Z FINE org.uiautomation.ios.IOSServer.p  Beta features enabled (enabled by -real flag): false
+2017-08-15T13:53:00Z FINE org.uiautomation.ios.IOSServer.p  Simulator enabled : true
+2017-08-15T13:53:00Z FINE org.uiautomation.ios.IOSServer.p  Inspector: http://0.0.0.0:5555/inspector/
+2017-08-15T13:53:00Z FINE org.uiautomation.ios.IOSServer.p  Tests can access the server at http://0.0.0.0:5555/wd/hub
+2017-08-15T13:53:00Z FINE org.uiautomation.ios.IOSServer.p  Server status: http://0.0.0.0:5555/wd/hub/status
+2017-08-15T13:53:00Z FINE org.uiautomation.ios.IOSServer.p  Connected devices: http://0.0.0.0:5555/wd/hub/devices/all
+2017-08-15T13:53:00Z FINE org.uiautomation.ios.IOSServer.p  Applications: http://0.0.0.0:5555/wd/hub/applications/all
+2017-08-15T13:53:00Z FINE org.uiautomation.ios.IOSServer.p  Capabilities: http://0.0.0.0:5555/wd/hub/capabilities/all
+2017-08-15T13:53:00Z FINE org.uiautomation.ios.IOSServer.p  Monitoring '/Users/dsorace/PycharmProjects/jars/applications' for new applications
+2017-08-15T13:53:00Z FINE org.uiautomation.ios.IOSServer.p  Archived apps: /Users/dsorace/PycharmProjects/jars/applications
+2017-08-15T13:53:00Z FINE org.uiautomation.ios.IOSServer.p  Build info: ios-driver 0.6.6-SNAPSHOT (built:20141009-1559,sha:663b7cc0a7a48ff629b1bcb39bbd78aed1c1e560)
+2017-08-15T13:53:00Z FINE org.uiautomation.ios.IOSServer.p  Running on: Mac OS X 10.12.1 (x86_64)
+2017-08-15T13:53:00Z FINE org.uiautomation.ios.IOSServer.p  Using java: 1.8.0_121
+2017-08-15T13:53:00Z FINE org.uiautomation.ios.IOSServer.p  Using Xcode install: /Applications/Xcode.app
+2017-08-15T13:53:00Z FINE org.uiautomation.ios.IOSServer.p  Using instruments: version:8.2, build: 61756
+2017-08-15T13:53:00Z FINE org.uiautomation.ios.IOSServer.p  Using iOS version 10.2
+2017-08-15T13:53:01Z FINE org.uiautomation.ios.IOSServer.p  iOS >= 6.0. Safari and hybrid apps are supported.
+2017-08-15T13:53:01Z FINE org.uiautomation.ios.IOSServer.p  Applications :
+2017-08-15T13:53:01Z FINE org.uiautomation.ios.IOSServer.p  	CFBundleName=Safari,CFBundleVersion=602.1,/Users/dsorace/.ios-driver/safariCopies/safari-10.2.app
+2017-08-15T13:53:05Z INFO org.uiautomation.ios.command.uiautomation.NewSessionNHandler.safeStart  The server cannot run Capabilities [{javascriptEnabled=true, sdkVersion=10.2, CFBundleIdentifier=com.apple.mobilesafari, locale=en_GB, CFBundleName=Safari, device=iphone, version=, platform=MAC, variation=iPhone5s}] at the moment.org.uiautomation.ios.application.APPIOSApplication cannot be cast to org.uiautomation.ios.application.IPAApplication
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'C17FGXFADHJF.local', ip: '10.1.29.88', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_121'
+Driver info: driver.version: unknown
+2017-08-15T13:54:03Z INFO org.uiautomation.ios.ApplicationStore.<init>  App archive folder:/Users/dsorace/PycharmProjects/jars/applications
+2017-08-15T13:54:03Z FINE org.uiautomation.ios.IOSServer.p  version:663b7cc0a7a48ff629b1bcb39bbd78aed1c1e560
+2017-08-15T13:54:03Z FINE org.uiautomation.ios.IOSServer.p  Beta features enabled (enabled by -real flag): false
+2017-08-15T13:54:03Z FINE org.uiautomation.ios.IOSServer.p  Simulator enabled : true
+2017-08-15T13:54:03Z FINE org.uiautomation.ios.IOSServer.p  Inspector: http://0.0.0.0:5555/inspector/
+2017-08-15T13:54:03Z FINE org.uiautomation.ios.IOSServer.p  Tests can access the server at http://0.0.0.0:5555/wd/hub
+2017-08-15T13:54:03Z FINE org.uiautomation.ios.IOSServer.p  Server status: http://0.0.0.0:5555/wd/hub/status
+2017-08-15T13:54:03Z FINE org.uiautomation.ios.IOSServer.p  Connected devices: http://0.0.0.0:5555/wd/hub/devices/all
+2017-08-15T13:54:03Z FINE org.uiautomation.ios.IOSServer.p  Applications: http://0.0.0.0:5555/wd/hub/applications/all
+2017-08-15T13:54:03Z FINE org.uiautomation.ios.IOSServer.p  Capabilities: http://0.0.0.0:5555/wd/hub/capabilities/all
+2017-08-15T13:54:03Z FINE org.uiautomation.ios.IOSServer.p  Monitoring '/Users/dsorace/PycharmProjects/jars/applications' for new applications
+2017-08-15T13:54:03Z FINE org.uiautomation.ios.IOSServer.p  Archived apps: /Users/dsorace/PycharmProjects/jars/applications
+2017-08-15T13:54:03Z FINE org.uiautomation.ios.IOSServer.p  Build info: ios-driver 0.6.6-SNAPSHOT (built:20141009-1559,sha:663b7cc0a7a48ff629b1bcb39bbd78aed1c1e560)
+2017-08-15T13:54:03Z FINE org.uiautomation.ios.IOSServer.p  Running on: Mac OS X 10.12.1 (x86_64)
+2017-08-15T13:54:03Z FINE org.uiautomation.ios.IOSServer.p  Using java: 1.8.0_121
+2017-08-15T13:54:03Z FINE org.uiautomation.ios.IOSServer.p  Using Xcode install: /Applications/Xcode.app
+2017-08-15T13:54:03Z FINE org.uiautomation.ios.IOSServer.p  Using instruments: version:8.2, build: 61756
+2017-08-15T13:54:03Z FINE org.uiautomation.ios.IOSServer.p  Using iOS version 10.2
+2017-08-15T13:54:04Z FINE org.uiautomation.ios.IOSServer.p  iOS >= 6.0. Safari and hybrid apps are supported.
+2017-08-15T13:54:04Z FINE org.uiautomation.ios.IOSServer.p  Applications :
+2017-08-15T13:54:04Z FINE org.uiautomation.ios.IOSServer.p  	CFBundleName=Safari,CFBundleVersion=602.1,/Users/dsorace/.ios-driver/safariCopies/safari-10.2.app
+2017-08-15T13:57:11Z INFO org.uiautomation.ios.command.uiautomation.NewSessionNHandler.safeStart  The server cannot run Capabilities [{javascriptEnabled=true, sdkVersion=10.2, CFBundleIdentifier=com.apple.mobilesafari, locale=en_GB, CFBundleName=Safari, device=iphone, version=, platform=MAC, variation=iPhone5s}] at the moment.org.uiautomation.ios.application.APPIOSApplication cannot be cast to org.uiautomation.ios.application.IPAApplication
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'C17FGXFADHJF.local', ip: '10.1.29.88', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_121'
+Driver info: driver.version: unknown

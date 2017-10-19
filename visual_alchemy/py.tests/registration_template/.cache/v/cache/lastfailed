@@ -1,0 +1,5 @@
+{
+  "registration_template2.py::TestContainerObjects::()::test_correct_bottom_logo": true, 
+  "registration_template2.py::TestContainerObjects::()::test_correct_header": true, 
+  "registration_template2.py::TestContainerObjects::()::test_correct_logo": true
+}

@@ -1,0 +1,14 @@
+{
+  "android_for_web.py::TestGITContainers::()::test_containers": true, 
+  "android_for_web.py::TestGetInTouch::()::test_active": true, 
+  "android_for_web.py::TestGetInTouch::()::test_address_attributes": true, 
+  "android_for_web.py::TestGetInTouch::()::test_contact_button": true, 
+  "android_for_web.py::TestTopNav_CarrotLogo::()::test_carrot_logo": true, 
+  "android_for_web.py::TestTopNav_CarrotLogo::()::test_carrot_logo_files": true, 
+  "android_for_web.py::TestTopNav_CarrotLogo::()::test_carrot_logo_menu": true, 
+  "android_for_web.py::TestTopNav_CarrotLogo::()::test_correct_carrot_logo": true, 
+  "android_for_web.py::TestTopNav_CarrotLogo::()::test_logo_placement": true, 
+  "android_for_web.py::TestTopNav_CarrotLogo::()::test_logo_size": true, 
+  "android_for_web.py::TestTopNav_CarrotLogo::()::test_navigation_attributes": true, 
+  "android_for_web.py::TestTopNav_CarrotLogo::()::test_navigation_links": true
+}

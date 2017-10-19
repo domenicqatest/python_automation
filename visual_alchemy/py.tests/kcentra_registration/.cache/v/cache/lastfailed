@@ -1,0 +1,20 @@
+{
+  "kcentra_registration1.py::TestButton::()::test_button_attributes": true, 
+  "kcentra_registration1.py::TestContainerObjects::()::test_bottom_logo_placement": true, 
+  "kcentra_registration1.py::TestContainerObjects::()::test_header_placement": true, 
+  "kcentra_registration1.py::TestContainerObjects::()::test_logo_placement": true, 
+  "kcentra_registration1.py::TestFillingOutForm::()::test_form": true, 
+  "kcentra_registration1.py::TestFillingOutForm::()::test_verify_drop_down": true, 
+  "kcentra_registration1.py::TestFooterText::()::test_date_dropdown": true, 
+  "kcentra_registration1.py::TestMainPageElements::()::test_bg_size": true, 
+  "kcentra_registration1.py::TestMainPageElements::()::test_content": true, 
+  "kcentra_registration1.py::TestMainPageElements::()::test_correct_container_size": true, 
+  "kcentra_registration1.py::TestMainPageElements::()::test_correct_header_size": true, 
+  "kcentra_registration1.py::TestPolicy::()::test_attendee_policy": true, 
+  "kcentra_registration1.py::TestPolicy::()::test_correct_footer_size": true, 
+  "kcentra_registration1.py::TestPolicy::()::test_footer_placement": true, 
+  "kcentra_registration1.py::TestPolicy::()::test_policy_titles": true, 
+  "kcentra_registration1.py::TestPolicy::()::test_reporting_policy": true, 
+  "kcentra_registration1.py::TestPolicy::()::test_safety_policy": true, 
+  "kcentra_registration1.py::TestPolicy::()::test_warning_policy": true
+}

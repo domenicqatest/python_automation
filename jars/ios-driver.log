@@ -1,0 +1,25 @@
+54:03:363 INFO ApplicationStore.<init>  App archive folder:/Users/dsorace/PycharmProjects/jars/applications
+54:03:514 FINE IOSServer.p  version:663b7cc0a7a48ff629b1bcb39bbd78aed1c1e560
+54:03:514 FINE IOSServer.p  Beta features enabled (enabled by -real flag): false
+54:03:514 FINE IOSServer.p  Simulator enabled : true
+54:03:515 FINE IOSServer.p  Inspector: http://0.0.0.0:5555/inspector/
+54:03:515 FINE IOSServer.p  Tests can access the server at http://0.0.0.0:5555/wd/hub
+54:03:515 FINE IOSServer.p  Server status: http://0.0.0.0:5555/wd/hub/status
+54:03:515 FINE IOSServer.p  Connected devices: http://0.0.0.0:5555/wd/hub/devices/all
+54:03:516 FINE IOSServer.p  Applications: http://0.0.0.0:5555/wd/hub/applications/all
+54:03:516 FINE IOSServer.p  Capabilities: http://0.0.0.0:5555/wd/hub/capabilities/all
+54:03:516 FINE IOSServer.p  Monitoring '/Users/dsorace/PycharmProjects/jars/applications' for new applications
+54:03:517 FINE IOSServer.p  Archived apps: /Users/dsorace/PycharmProjects/jars/applications
+54:03:517 FINE IOSServer.p  Build info: ios-driver 0.6.6-SNAPSHOT (built:20141009-1559,sha:663b7cc0a7a48ff629b1bcb39bbd78aed1c1e560)
+54:03:517 FINE IOSServer.p  Running on: Mac OS X 10.12.1 (x86_64)
+54:03:517 FINE IOSServer.p  Using java: 1.8.0_121
+54:03:518 FINE IOSServer.p  Using Xcode install: /Applications/Xcode.app
+54:03:518 FINE IOSServer.p  Using instruments: version:8.2, build: 61756
+54:03:518 FINE IOSServer.p  Using iOS version 10.2
+54:04:376 FINE IOSServer.p  iOS >= 6.0. Safari and hybrid apps are supported.
+54:04:377 FINE IOSServer.p  Applications :
+54:04:377 FINE IOSServer.p  	CFBundleName=Safari,CFBundleVersion=602.1,/Users/dsorace/.ios-driver/safariCopies/safari-10.2.app
+57:11:482 INFO NewSessionNHandler.safeStart  The server cannot run Capabilities [{javascriptEnabled=true, sdkVersion=10.2, CFBundleIdentifier=com.apple.mobilesafari, locale=en_GB, CFBundleName=Safari, device=iphone, version=, platform=MAC, variation=iPhone5s}] at the moment.org.uiautomation.ios.application.APPIOSApplication cannot be cast to org.uiautomation.ios.application.IPAApplication
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'C17FGXFADHJF.local', ip: '10.1.29.88', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_121'
+Driver info: driver.version: unknown

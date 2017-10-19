@@ -1,0 +1,196 @@
+from selenium import webdriver
+from assertlib import assertEqual, assertAtleast, assertTrue
+import time
+
+base_url = "https://vimeo.com/"
+
+def setup_module(module):
+    """The setup_module runs only one time."""
+
+    global driver, log
+    driver = webdriver.Chrome()
+    driver.set_window_size(1080, 800)
+    driver.get(base_url)
+
+def teardown_module(module):
+    driver.quit()
+
+class TestJoinButton(object):
+    def test_present(self):
+        """Test join button present"""
+        print('\n' * 2)  # adds line break
+        join_button = driver.find_element_by_class_name("topnav_menu_join")
+
+
+        # Is the button present? Missing? Broken?  (REPLACE WITH TRY, IF, EXCEPT)
+        if join_button.is_displayed():
+            print "'Join' button is present"
+        else:
+            print "'Join' button is missing or broken"
+
+    def test_location(self):
+        """Test join button location"""
+        join_button = driver.find_element_by_class_name("topnav_menu_join")
+        print('\n')  # adds line break
+        print "location of button is at:"
+        print (join_button.location)
+
+        assertEqual(join_button.location, {"y": 19.0, "x": 150.0})
+
+    def test_size(self):
+        """Test join button size"""
+        join_button = driver.find_element_by_class_name("topnav_menu_join")
+        size = join_button.size
+        print('\n')  # adds line break
+        print "size of the button is:"
+        print (size)
+
+        assertEqual(join_button.size["width"], 48)
+        assertEqual(join_button.size["height"], 32)
+
+    def test_background_color(self):
+        """Test join button background color"""
+        join_button = driver.find_element_by_class_name("topnav_menu_join")
+        assertEqual(join_button.value_of_css_property("background-color"), 'rgba(127, 196, 0, 1)')
+
+    def test_button_font(self):
+        """Test join button font """
+        # Test font color
+        join_button = driver.find_element_by_class_name("topnav_menu_join")
+        assertEqual(join_button.value_of_css_property("color"),
+                    'rgba(255, 255, 255, 1)')
+        # Test font attributes
+        assertEqual(join_button.value_of_css_property("font"),
+                    'normal normal bold normal 14px / 32px "Helvetica Neue", Helvetica, Arial, sans-serif')
+
+class TestAccountCreate(object):
+    def test_click(self):
+        """Test join button clicks"""
+        driver.find_element_by_class_name("topnav_menu_join").click()
+        time.sleep(2)
+        iris_modal = driver.find_element_by_class_name("iris_modal-box")
+
+        # Is the iris_modal-box present? Missing? Broken?
+        if iris_modal.is_displayed():
+            print "'iris_modal' box is present"
+        else:
+            print "'iris_modal' box is missing or broken"
+
+        # make sure 'x' is gray
+        gray_x = driver.find_element_by_class_name("iris_icp")
+        assertEqual(gray_x.value_of_css_property("color"), 'rgba(135, 156, 171, 1)')
+
+        # click 'x' to close
+        driver.find_element_by_class_name("iris_modal-btn--close").click()
+        time.sleep(2)
+        #click 'Join' button again
+        driver.find_element_by_class_name("topnav_menu_join").click()
+        time.sleep(2)
+
+    def test_location(self):
+        """Test iris modal location"""
+        iris_modal = driver.find_element_by_class_name("iris_modal-box")
+        print('\n')  # adds line break
+        print "location of button is at:"
+        print (iris_modal.location)
+
+        assertEqual(iris_modal.location, {"y": 124.0, "x": 340.0})
+
+    def test_size(self):
+        """Test whole iris modal size"""
+        iris_modal = driver.find_element_by_class_name("iris_modal-box")
+        size = iris_modal.size
+        print('\n')  # adds line break
+        print "size of the button is:"
+        print (size)
+
+        assertEqual(iris_modal.size["width"], 400)
+        assertEqual(iris_modal.size["height"], 451)
+
+    def test_header(self):
+        """Test modal header background color, font color, font size, font weight, and text"""
+        modal_header = driver.find_element_by_class_name("iris_modal-header")
+        assertEqual(modal_header.value_of_css_property("background-color"), 'rgba(242, 244, 245, 1)')
+        assertEqual(modal_header.value_of_css_property("color"), 'rgba(64, 84, 92, 1)')
+        assertEqual(modal_header.value_of_css_property("font-size"), '20px')
+        assertEqual(modal_header.value_of_css_property("font-weight"), 'bold')
+        assertEqual("Join Vimeo", driver.find_element_by_class_name("iris_modal-header").text)
+
+    def test_dialog_content(self):
+        """This tests the form section of the iris_modal"""
+        dialog_content = driver.find_element_by_class_name("iris_modal-content")
+        assertEqual(dialog_content.value_of_css_property("background-color"), 'rgba(255, 255, 255, 1)')
+        assertEqual(dialog_content.value_of_css_property("color"), 'rgba(78, 90, 94, 1)')
+
+        assertEqual(dialog_content.value_of_css_property("font-size"), '14px')
+        assertEqual(dialog_content.value_of_css_property("font-weight"), 'normal')
+        # verify form
+        assert driver.find_element_by_id("signup_name")
+        assert driver.find_element_by_id("signup_email")
+        assert driver.find_element_by_id("signup_password")
+
+        # join with email button
+        join_email = driver.find_element_by_class_name("iris_btn--positive")
+        assertEqual(join_email.value_of_css_property("background-color"), 'rgba(127, 196, 0, 1)')
+        assertEqual(join_email.value_of_css_property("color"), 'rgba(255, 255, 255, 1)')
+        assertEqual(join_email.value_of_css_property("font-size"), '18px')
+        assertEqual(join_email.value_of_css_property("font-weight"), 'bold')
+
+        # join with facebook button
+        join_fb = driver.find_element_by_class_name("iris_btn.iris_btn--lg.facebook")
+        assertEqual(join_fb.value_of_css_property("background-color"), 'rgba(76, 112, 186, 1)')
+        assertEqual(join_fb.value_of_css_property("color"), 'rgba(255, 255, 255, 1)')
+        assertEqual(join_fb.value_of_css_property("font-size"), '18px')
+        assertEqual(join_fb.value_of_css_property("font-weight"), 'bold')
+
+        # verify 'Already...' message text
+        already_text = driver.find_element_by_class_name("login_text")
+        assertEqual(already_text.value_of_css_property("color"), 'rgba(78, 90, 94, 1)')
+        assertEqual(already_text.value_of_css_property("font-size"), '14px')
+        assertEqual(already_text.value_of_css_property("font-weight"), 'normal')
+
+        # verify 'Log in' text
+        login_text = driver.find_element_by_class_name("login_text")
+        assertEqual(login_text.value_of_css_property("color"), 'rgba(78, 90, 94, 1)')
+        assertEqual(login_text.value_of_css_property("font-size"), '14px')
+        assertEqual(login_text.value_of_css_property("font-weight"), 'normal')
+
+
+    def test_modal_fonts(self):
+        """Test that all fonts in the modal are from the same font family"""
+        iris_modal = driver.find_element_by_class_name("iris_modal-box")
+        # Test font attributes
+        assertEqual(iris_modal.value_of_css_property("font-family"),
+                        '"Helvetica Neue", Helvetica, Arial, sans-serif')
+
+class TestJoinVimeo(object):
+
+#  LOGIN SCENARIO 1
+    def test_join_email(self):
+        """Join with email"""
+        driver.find_element_by_class_name("topnav_menu_join").click()
+        time.sleep(2)
+        name = Domenic Sorace
+        driver.find_element_by_class_name("js-join_name").click().send_keys(name)
+        time.sleep(2)
+        email = domenicqatest
+        driver.find_element_by_class_name("js-join_email").click().send_keys(email)
+        time.sleep(2)
+        pw = qatest123
+        driver.find_element_by_class_name("js-join_password").click().send_keys(pw)
+
+        driver.find_element_by_class_name("iris_btn--positive").click()
+
+# LOGIN SCENARIO 2
+    def test_join_fb(self):
+        """Join with fb"""
+        driver.find_element_by_class_name("iris_btn.iris_btn--lg.facebook").click()
+
+# LOGIN SCENARIO 3
+    def test_account_holder(self):
+        """Login with account"""
+        driver.find_element_by_link_text("Log in").click()
+
+
+    def teardown_class(self):
+        driver.quit()

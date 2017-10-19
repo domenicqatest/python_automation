@@ -1,0 +1,7 @@
+{
+  "agios_registration2.py::TestContainerObjects::()::test_register_button": true, 
+  "agios_registration2.py::TestPage2Elements::()::test_bg_size": true, 
+  "agios_registration2.py::TestPage2Elements::()::test_content": true, 
+  "agios_registration2.py::TestPage2Elements::()::test_correct_container_size": true, 
+  "agios_registration2.py::TestProfessionalInformation::()::test_correct_professional_text1": true
+}
